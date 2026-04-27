@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const FILE_URL = `file://${path.join(__dirname, 'shopping-list.html')}`;
+const FILE_URL = `file://${path.join(__dirname, 'index.html')}`;
 
 let passed = 0;
 let failed = 0;
@@ -92,7 +92,6 @@ const hasStrikethrough = await page.$eval('li:last-child .item-text', el => {
 });
 assert(hasStrikethrough, '체크된 아이템 텍스트에 취소선 적용됨');
 
-// 다시 클릭해서 토글 (DOM 재렌더링 후 새로 조회)
 await page.click('li:last-child input[type="checkbox"]');
 const reUnchecked = await page.$eval('li:last-child input[type="checkbox"]', el => el.checked);
 assert(!reUnchecked, '재클릭 후: 체크 해제됨');

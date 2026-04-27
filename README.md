@@ -7,18 +7,18 @@
 
 ## 실행 방법
 
-> **메인 파일: `shopping-list.html`**
+> **메인 파일: `index.html`**
 
-1. 이 저장소를 클론하거나 `shopping-list.html` 파일을 다운로드합니다.
-2. `shopping-list.html` 파일을 **더블클릭**하거나, 브라우저에 드래그 앤 드롭합니다.
+1. 이 저장소를 클론하거나 `index.html` 파일을 다운로드합니다.
+2. `index.html` 파일을 **더블클릭**하거나, 브라우저에 드래그 앤 드롭합니다.
 3. 별도의 서버나 설치 없이 바로 사용할 수 있습니다.
 
 ```bash
 # 저장소 클론 후 바로 열기
 git clone https://github.com/edensays/shopping-list-app.git
 cd shopping-list-app
-open shopping-list.html   # macOS
-start shopping-list.html  # Windows
+open index.html   # macOS
+start index.html  # Windows
 ```
 
 ---
